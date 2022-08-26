@@ -1,0 +1,56 @@
+#plainwhite{
+
+
+background-color: #f5f1f1fa;
+
+}
+
+#nav-dropdown{
+
+ width: 400px;   
+}
+
+#round{
+    border-radius: 10%;
+    background-color: #ffffff;
+    height: 46%;
+    width: 85%;
+    
+}
+
+#img{
+   
+    width: 40%;
+}
+
+#text{
+    width: 45%;
+}
+
+
+@media (max-width:900px) {
+    #round{
+        border-radius: 10%;
+        background-color: #ffffff;
+        height: 46%;
+        width: 95%;
+        
+    }
+    
+    #img{
+       
+        width: 40%;
+    }
+
+    
+#text{
+    width: 51%;
+}
+
+    
+}
+.nav-img{
+
+    width: 95%;
+
+}

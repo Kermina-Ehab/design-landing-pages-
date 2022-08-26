@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  defer async src="https://maps.googleapis.com/maps/api/js"></script>
+
+</head>
+<button type="button" onclick="initialize();">Show My Position on Google Map</button>
+<div id="map-canvas" style="width: 400px; height: 300px;"></div>
+<script>
+
+function initialize() {
+
+    navigator.geolocation.getCurrentPosition(position)
+    function position(pos) {
+        console.log(pos)
+    
+        var latlong = new google.maps.LatLng(pos.coords.latitude,pos.coords.longitude );   
+        
+        var myOptions = {
+        center:latlong,
+        zoom: 15,
+        mapTypeControl: true,
+        navigationControlOptions: {
+            style:google.maps.NavigationControlStyle.SMALL
+        }
+    }
+    
+    var map = new google.maps.Map(document.getElementById("map-canvas"),myOptions);
+    
+    var marker = new google.maps.Marker({
+        position:latlong,
+        map: map
+    });}
+}
+
+
+</script>
+
+       </html>

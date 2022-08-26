@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="index.css">
+<script src="functionaluty.js" defer></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+        <div class="container-fluid bg-warning ">
+           
+          <!-- <img src="img/noon-black-en.svg" alt="">
+         -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav w-100 bg-warning py-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Deliver to<br/><span class="fw-bold text-dark">Cairo</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+             
+               <div class="w-75">
+              <li>
+
+                <form class="d-flex  ">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+
+              </li>
+            </div>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  options
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                 
+                  <li><a class="dropdown-item" href="#">Cart</a></li>
+                  <li><a class="dropdown-item" href="#">Sign in</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light " id="plainwhite">
+        <div class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+            
+         
+                <li class="nav-item dropdown text-primary ">
+                    <a class="nav-link dropdown-toggle text-primary my-1" href="#" id="navbarDropdownMenu" onclick="toggle(event)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        All catagories
+                    </a>
+                    
+                    <ul class="dropdown-menu  " id="nav-dropdown" aria-labelledby="navbarDropdownMenu">
+                      <div class="container-fluid row g-0  gap-3 " id="navrow">
+                        <div class="col-5 my-2 mx-0">
+                      <li><a class="dropdown-item" href="#"> TVs, Satellites & Accessories</a></li>
+                      <li><a class="dropdown-item" href="#">  Mobiles</a></li>
+                      <li><a class="dropdown-item" href="#">  Beauty & Health</a></li>
+                      <li><a class="dropdown-item" href="#">  Fashion</a></li>
+                      <li><a class="dropdown-item" href="#">  Home & Kitchen</a></li>
+                      <li><a class="dropdown-item" href="#">  Sports & Fitness</a></li>
+                      <li><a class="dropdown-item" href="#">  Baby Products</a></li>
+                      <li><a class="dropdown-item" href="#">  Books</a></li>
+                      <li><a class="dropdown-item" href="#">    Music</a></li>
+                      
+                      
+                     
+
+                     </div>
+
+                    <div class="col-5">
+                      <li><a class="dropdown-item" href="#"> Electronics</a></li>
+                      <li><a class="dropdown-item" href="#">Most Popular</a></li>
+                      <li><a class="dropdown-item" href="#">TVs, Satellites & Accessories</a></li>
+                      <li><a class="dropdown-item" href="#">Laptops & Accessories</a></li>
+                      <li><a class="dropdown-item" href="#">Audio & Home Entertainment</a></li>
+                      <li><a class="dropdown-item" href="#">SCameras & Accessories</a></li>
+                      <li><a class="dropdown-item" href="#">Computer Components</a></li>
+                      <li><a class="dropdown-item" href="#">Computer Accessories </a></li>
+                      <li><a class="dropdown-item" href="#">Data Storage</a></li>
+                         
+
+                    </div>
+
+                   
+                   </div>
+                    </ul>
+ 
+                  </li>
+                  
+                 
+                <li class="nav-item dropdown text-dark ">
+                  <a class="nav-link dropdown-toggle text-primary my-1 " href="#" id="navbarDropdownMenu" onclick="toggle(event)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Electronics
+                  </a>
+                  
+                  <ul class="dropdown-menu   " id="nav-dropdown" aria-labelledby="navbarDropdownMenu">
+                    <div class=" row g-0 gap-3 " id="navrow">
+                      <div class="container-fluid my-2  col-5">
+                        <li><a class="dropdown-item" href="#"> TVs, Satellites & Accessories</a></li>
+                        <li><a class="dropdown-item" href="#"> Laptops & Accessories</a></li>
+                        <li><a class="dropdown-item" href="#">Audio & Home Entertainment</a></li>
+                        <li><a class="dropdown-item" href="#"> Video Games</a></li>
+                        <li><a class="dropdown-item" href="#"> Cameras & Accessories</a></li>
+                        <li><a class="dropdown-item" href="#"> Printers & Accessories</a></li>
+                        <li><a class="dropdown-item" href="#"> Networking Products</a></li>
+                        <li><a class="dropdown-item" href="#"> Computer Components</a></li>
+                        <li><a class="dropdown-item" href="#"> Computer Accessories</a></li>
+
+                  </div>
+
+                  <div class="col-6">
+                    <div class=" container g-3 my-3">
+                   <img src="img/nav1.png" class="nav-img"  alt="">
+                  </div>
+                  <div class=" container g-3">
+                   <img src="img/nav2.png" class="nav-img" alt="">
+                       </div>
+
+                  </div>
+
+
+                  </div>
+                  </ul>
+
+                </li>
+
+
+
+
+
+
+
+
+
+
+
+         
+         
+         
+         
+                <a class="navbar-brand text-pr" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+
+              <li class="nav-item">
+              <button class="btn">  <a class="nav-link active px-3  text-dark fw-bold mt-1 h6 " aria-current="page" href="#">mobiles</a></button>
+              </li>
+              <li class="nav-item">
+                <button class="btn">  <a class="nav-link px-1 mt-1 text-dark fw-bold h6" href="#">men</a></button>
+            </li>
+              <li class="nav-item">
+                <button class="btn ">  <a class="nav-link px-3 mt-1 text-dark fw-bold h6" href="#">women</a></button>
+            </li>
+              <li class="nav-item">
+              <button class="btn">  <a class="nav-link px-3 mt-1 text-dark fw-bold h6" href="#">home</a></button>
+              </li>
+              <li class="nav-item">
+                <button class="btn">  <a class="nav-link px-3 mt-1 text-dark fw-bold h6" href="#">beauty&health</a></button>
+            </li>
+              <li class="nav-item">
+                <button class="btn">  <a class="nav-link px-3 mt-1 text-dark fw-bold h6" href="#">Pricing</a></button>
+            </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="  mb-3">
+        <img src="img/upslider.png" width="100%" alt="">
+        
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/slider1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider3.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="fa fa-angle-left fa-2x text-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="fa fa-angle-right fa-2x text-dark " aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+    <div>
+     <div class="container-fluid my-2">
+       <img src="img/img1.png" width="99%" alt="">
+       <div class="my-4">
+         <img src="img/rounded1.png" class=" " width="8%" alt="">
+         <img src="img/rounded2.png" class="mx-1 " width="8%" alt="">
+         <img src="img/rounded3.png" class="mx-1 " width="8%" alt="">
+         <img src="img/rounded4.png" class="mx-2 " width="8%" alt="">
+         <img src="img/rounded5.png" class="mx-1" width="8%" alt="">
+         <img src="img/rounded6.png" class="mx-2 " width="8%" alt="">
+         <img src="img/rounded7.png" class="mx-1 " width="8%" alt="">
+         <img src="img/rounded8.png" class="mx-2 " width="8%" alt="">
+         <img src="img/rounded9.png" class="mx-1 " width="8%" alt="">
+         <img src="img/rounded10.png" class="mx-2 " width="8%" alt="">
+         <img src="img/rounded11.png" class="mx-1 " width="8%" alt="">
+
+       </div>
+
+      </div>
+
+      <div class="my-2">
+
+
+        <div class="container-fluid d-flex justify-content-between">
+        <div class="container-fluid  text-start text-dark"><h3 class="fw-bold">top sellers</h3></div>
+         
+        <div><button class="btn btn-outline-primary text-dark">ViewAll</button></div>
+      </div>
+
+
+      <div class="row my-2 ">
+        <div class="col-lg-2 col-md-4 col-6 ">
+          <div class="card h-100"> 
+              <div class=" text-center"> 
+                  <img src="img/N52083467A_1.webp" width="90%" class=" mb-0" alt="">
+              <p class="card-title mb-1 ">infinx note11    </p>
+          <p class=" text-muted card-text   text-center">EGP 4390.00</p>   
+          <p class=" text-muted card-text mt-5 text-center">arrives <span class="fw-bold text-dark">Wed,May 18</span></p>   
+          <div class=" ms-4 d-flex justify-content-between px-3 mb-4 ">
+            <p class=" text-start card-text my-1 fw-bold text-dark bg-warning ">express</p>
+            <p class="text-warning my-1"><i class="fa-solid fa-star"></i>5.0</p>   
+
+          </div>
+             
+      </div> 
+          </div>
+      </div>
+
+
+      <div class="col-lg-2 col-md-4 col-6 ">
+        <div class="card h-100"> 
+            <div class=" text-center"> 
+                <img src="img/img2.webp" width="90%" class=" mb-0" alt="">
+            <p class="card-title mb-1 ">apple watch series7    </p>
+        <p class=" text-muted card-text   text-center">EGP 9590.00</p>   
+        <p class=" text-muted card-text mt-5 text-center">arrives <span class="fw-bold text-dark">Wed,May 18</span></p>   
+        <div class=" ms-4 d-flex justify-content-between px-3 mb-3">
+          <p class=" text-start card-text my-1 fw-bold text-dark bg-warning">express</p>
+          <p class="text-warning my-1"><i class="fa-solid fa-star"></i>4.8</p>   
+
+        </div>
+           
+    </div> 
+        </div>
+    </div>
+
+
+    <div class="col-lg-2 col-md-4 col-6">
+      <div class="card h-100"> 
+          <div class=" text-center"> 
+              <img src="img/img3.webp" width="90%" class=" mb-0" alt="">
+          <p class="card-title mb-1 ">Cager 10000mAh fast charging portable     </p>
+      <p class=" text-muted card-text   text-center">EGP 199.00</p>   
+      <p class=" text-muted card-text my-1 text-center">arrives <span class="fw-bold text-dark">Wed,May 18</span></p>   
+      <div class=" ms-4 d-flex justify-content-between px-3 mt-3">
+        <p class=" text-start card-text my-1 fw-bold text-dark bg-warning">express</p>
+        <p class="text-warning my-1"><i class="fa-solid fa-star"></i>3.0</p>   
+
+      </div>
+         
+  </div> 
+      </div>
+  </div>
+
+
+  <div class="col-lg-2 col-md-4 col-6 ">
+    <div class="card h-100 "> 
+        <div class=" text-center"> 
+            <img src="img/img4.webp" width="90%" class=" mb-0" alt="">
+        <p class="card-title mb-1 "> sony playstation 5 console      </p>
+    <p class=" text-muted card-text   text-center">EGP 18590.00</p>   
+    <p class=" text-muted card-text mt-5 text-center">arrives <span class="fw-bold text-dark">Wed,May 18</span></p>   
+    <div class=" ms-4 d-flex justify-content-between px-3 mt-2">
+      <p class=" text-start card-text my-1 fw-bold text-dark bg-warning">express</p>
+      <p class="text-warning my-1"><i class="fa-solid fa-star"></i>4.7</p>   
+
+    </div>
+       
+</div> 
+    </div>
+</div>
+
+<div class="col-lg-2 col-md-4 col-6">
+  <div class="card h-100"> 
+      <div class=" text-center"> 
+          <img src="img/img5.webp" width="90%" class=" mb-0" alt="">
+      <p class="card-title mb-1 "> Apple ipad 2021(9th Generation)  </p>
+  <p class=" text-muted card-text   text-center">EGP 9999.00</p>   
+  <p class=" text-muted card-text my-1 text-center">arrives <span class="fw-bold text-dark">Wed,May 18</span></p>   
+  <div class=" ms-4 d-flex justify-content-between px-3 mt-1">
+    <p class=" text-start card-text mt-4 fw-bold text-dark bg-warning">express</p>
+    <p class="text-warning my-1"><i class="fa-solid fa-star"></i>2.9</p>   
+
+  </div>
+     
+</div> 
+  </div>
+</div>
+
+<div class="col-lg-2 col-md-4 col-6">
+  <div class="card h-100"> 
+      <div class=" text-center"> 
+          <img src="img/img7.webp" width="90%" class=" mb-0" alt="">
+      <p class="card-title mb-1 "> Apple airpods with charging case </p>
+  <p class=" text-muted card-text   text-center">EGP 3299.00</p>   
+  <p class=" text-muted card-text my-1 text-center">arrives <span class="fw-bold text-dark">Wed,May 18</span></p>   
+  <div class=" ms-4 d-flex justify-content-between px-3 mt-1">
+    <p class=" text-start card-text mt-4 fw-bold text-dark bg-warning">express</p>
+    <p class="text-warning my-1"><i class="fa-solid fa-star"></i>4.2</p>   
+
+  </div>
+     
+</div> 
+  </div>
+</div>
+
+
+
+
+
+      </div>
+
+
+      </div>
+    
+    <div class=" bg-secondary row justify-content-evenly g-0 gap-1 py-1">
+        <div class=" col-md-5 col-3 d-flex  align-items-end  ">
+   <img src="img/07366b25-d23d-4507-902c-26e31379fb8e.png" class="w-100" alt="">
+       </div>
+    
+
+<div class="col-md-6 col-7 ">
+  
+    <div class="row g-0  ">
+     <div class="container-fluid col-6 ">
+           <div class=" my-3 d-flex justify-content-center  align-items-center gap-3 " id="round"><h5 id="text">watch</h5>    <img class="my-1 " id="img" src="img/watchA_1.webp"  alt=""></div>
+           <div class=" my-3 d-flex justify-content-center  align-items-center gap-3 " id="round"><h5 id="text">memory</h5>    <img class="my-1 " id="img" src="img/haed5836A_1.webp"  alt=""></div>
+          
+
+
+     </div>
+
+     <div class="col-6 ">
+      <div class=" my-3 d-flex justify-content-center align-items-center gap-3 " id="round"><h5  id="text">Electronics</h5>    <img class="my-1 "  id="img" src="img/N14376052A_1.webp"  alt=""></div>
+      <div class=" my-3 d-flex justify-content-center align-items-center gap-3 " id="round"><h5  id="text">phones</h5>    <img class="my-1 "  id="img" src="img/N52083467A_1.webp"  alt=""></div>
+     
+
+
+</div>
+
+
+   </div>
+</div>
+
+
+
+</div>
+
+<div class="bg-light row container-fluid my-3">
+<div class="col-3 my-2">
+<h5>Electronics</h5>
+<p>Mobiles</p>
+<p>Tablets</p>
+<p>Laptops</p>
+<p>cameras</p>
+<p>video games</p>
+
+
+</div>
+<div class="col-3 my-2">
+  <h5>Fashion</h5>
+  <p>Men's fashion</p>
+  <p>Women's fashion </p>
+  <p>Boys' fashion</p>
+  <p>girls' fashion</p>
+  <p>Eye wear</p>
+  
+  
+  </div>
+  <div class="col-3 my-2">
+    <h5>HOME AND KITCHEN</h5>
+    <p>Kitchen & Dining</p>
+    <p>Bedding </p>
+    <p>Home Appliances</p>
+    <p>Patio, Lawn & Garden</p>
+    <p>Home Appliances</p>
+    
+    
+    </div>
+
+
+    <div class="col-3 my-2">
+      <h5>BEAUTY</h5>
+      <p>Women's Fragrance</p>
+      <p>Men's Fragrance </p>
+      <p>Haircare</p>
+      <p>Skincare</p>
+      <p>Tools & Accessories</p>
+      
+      
+      </div>
+</div>
+
+<div class="d-flex justify-content-evenly"> 
+
+<div>
+<h4>SHOP ON THE GO</h4>
+<div class="py-1" >
+  <button class="btn btn-dark text-light"><i class="fa-brands fa-apple"></i>  Appstore</button>
+  <button class="btn btn-dark text-light"><i class="fa-brands fa-google-play text-success "></i>  Googleplay</button>
+</div>
+
+</div>
+<div>
+  <h4>CONNECT WITH US</h4>
+  <div class="py-1  text-dark">
+    <i class="fa-brands fa-facebook bg-warning fa-2x mx-2 p-2 rounded-circle"></i>
+    <i class="fa-brands fa-twitter bg-warning fa-2x mx-2 p-2 rounded-circle"></i>    
+    <i class="fa-brands fa-instagram bg-warning fa-2x mx-2 p-2 rounded-circle"></i>    
+    <i class="fa-brands fa-linkedin bg-warning fa-2x mx-2 p-2 rounded-circle"></i>    
+
+  </div>
+  
+  </div>
+</div>
+    </div>
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

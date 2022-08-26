@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+<style>
+    #meter-container div meter:nth-child(2)::-webkit-meter-optimum-value{
+        background-color: orangered;
+    }
+
+    #meter-container div:nth-child(3) meter:nth-child(2)::-webkit-meter-optimum-value{
+        background-color: rgb(10, 150, 244);
+    }
+    #meter-container div:nth-child(4) meter:nth-child(2)::-webkit-meter-optimum-value{
+        background-color: red;
+    }
+</style>
+</head>
+<body>
+    <nav>
+<div style=" background-color: orange; display: flex; justify-content:space-between ; align-items: center;">
+ <div>
+<img style="background-color: transparent; " src="./download.jpeg">
+
+ </div>
+ <div  style="width: 60%; font-size: 20px;">
+    <h1>kermina Ehab Samir</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus 
+        inventore tempore blanditiis earum consectetur fugiat adipisci? Dicta adipisci enim maxime velit aliquid sapiente inventore 
+        incidunt quia iusto quibusdam? Ad suscipit incidunt perspiciatis?</p> 
+ </div>   
+</div>
+
+    </nav>
+    <div style="display: grid;    grid-template-columns: repeat(2,1fr);">
+    <div style="grid-column-start: 1;   font-size: 20px;">
+        <div  id="audio-container" onmouseleave="pause()"  onmouseenter="play()" >
+        <h2>contact</h2>
+        <p>11.AbdelsalamAref.st,Beni-Suef governate </p>
+        <p>0124545454</p>
+        <p>kerminaEhab.@gmail.com</p>
+                    <audio     src="./file_example_MP3_5MG.mp3" ></audio>
+
+    </div>
+    <div id="meter-container">
+        <h2>Languages</h2>
+        <div>
+        <span  style="display:block;">English</span>
+        <meter value="1" ></meter>
+    </div>
+    <div>
+        <span style="display:block;">russian</span>
+         <meter style="display:inline;" value=".4" ></meter>
+        </div>
+        <div>
+         <span style="display: block;">spanish</span>
+        <meter value=".8" ></meter>
+    </div>
+    </div>
+    <div>
+        <h2>onlineinfo</h2>
+    <div style="display: flex; justify-content: space-around; align-items: center;">
+        <div>
+            <i class="fa-brands fa-facebook-f " style="border-radius: 22px;  font-size: 22px; padding: 4px; color: #f2f2f2;; background-color: rgb(17, 141, 237);"></i>
+            <a href="">/fbcom</a>
+
+        </div>
+        <div>
+            <i class="fa-brands fa-google-plus " style="border-radius: 22px;  font-size: 22px; padding: 4px; color: #f2f2f2;; background-color: rgb(240, 6, 6);"></i>
+            <a href="">/googlecom</a>
+
+        </div>
+        
+        </div>
+        <div  style="margin-top: 20px;">
+            <input type="datetime-local" name="" id="">
+            <span >play audio</span>
+           </div>
+           <video controls src="./file_example_MP4_480_1_5MG.mp4"></video>
+        
+    </div>
+    </div>
+    <div style="grid-column-start: 2;  ">
+        <div>
+            <h2 style="background-color: orange; color: #f2f2f2; ">&nbsp;&nbsp; achievements</h2>
+            <div>
+                <h3>2010 loremproject</h3>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Autem, quasi? Id, sequi?</p>
+            </div>
+            <div>
+                <h3>2012vivamusproject</h3>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Autem, quasi? Id, sequi?</p>
+            </div>  
+            <div>
+                <h3>2015 nunicproject</h3>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Autem, quasi? Id, sequi?</p>
+            </div>          
+
+        </div>
+        <div>
+            <h2 style="background-color: orange; color: #f2f2f2;"> &nbsp;&nbsp;education</h2>
+
+            <div>
+                <h3>1997-2001 ABC school</h3>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Autem, quasi? Id, sequi?</p>
+            </div>
+            <div>
+                <h3>2001-2004 ohio university</h3>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Autem, quasi? Id, sequi?</p>
+            </div>  
+            <div>
+                <h3>2005-2007 ABC studies</h3>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Autem, quasi? Id, sequi?</p>
+            </div>  
+
+
+
+        </div>
+
+        <div>
+            <h2 style="background-color: orange; color: #f2f2f2;"> &nbsp;&nbsp;work experience</h2>
+
+            <div>
+                <h3>2010-2013 ABC companyl</h3>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Autem, quasi? Id, sequi?</p>
+            </div>
+            <div>
+                <h3>2013-2015 zoom company</h3>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Autem, quasi? Id, sequi?</p>
+            </div>  
+     
+
+
+        </div>
+
+    </div>
+    </div>
+<script>
+function play() {
+ var audio=document.querySelector('audio')
+ audio.setAttribute('controls',true)
+ 
+ audio.play()
+ 
+ document.getElementById('audio-container').appendChild(audio)
+
+}
+const pause=()=>{
+    var audio=document.querySelector('audio')
+    audio.pause()
+
+
+}
+</script>
+</body>
+
+</html>
